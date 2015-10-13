@@ -19,6 +19,6 @@ FactoryGirl.define do
     status :CREATE_COMPLETE
     image { SecureRandom.uuid }
     cloud { create(:cloud, :aws) }
-    base_image { create(:base_image, cloud: cloud) }
+    base_image { cloud.base_images.first || create(:base_image, cloud: cloud) }
   end
 end

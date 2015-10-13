@@ -76,6 +76,7 @@ describe API do
       let(:result) do
         params.except(:patterns_attributes).merge(
           'id' => Fixnum,
+          'os_version' => String,
           'created_at' => String,
           'updated_at' => String,
           'status' => 'CREATE_COMPLETE'

@@ -368,7 +368,7 @@ describe Pattern do
 
   describe '#create_images' do
     before do
-      base_images = [FactoryGirl.create(:base_image, cloud: cloud)]
+      base_images = [FactoryGirl.create(:base_image, cloud: cloud, os: 'CentOS-7.0')]
       allow(@pattern.blueprint.project).to receive(:base_images).and_return(base_images)
 
       allow(CloudConductor::PackerClient).to receive_message_chain(:new, :build).and_yield('dummy' => {})
@@ -416,7 +416,8 @@ describe Pattern do
         }
       }
 
-      base_image_aws = FactoryGirl.create(:base_image, cloud: FactoryGirl.create(:cloud, :aws, name: 'aws'))
+      cloud_aws = FactoryGirl.create(:cloud, :aws, name: 'aws')
+      base_image_aws = cloud_aws.base_images.where(os: 'CentOS-6.5').first || FactoryGirl.create(:base_image, cloud: cloud_aws)
       base_image_openstack = FactoryGirl.create(:base_image, cloud: FactoryGirl.create(:cloud, :openstack, name: 'openstack'))
       FactoryGirl.create(:image, pattern: @pattern, base_image: base_image_aws, role: 'nginx')
       FactoryGirl.create(:image, pattern: @pattern, base_image: base_image_openstack, role: 'nginx')

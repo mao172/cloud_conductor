@@ -28,6 +28,7 @@ module API
             requires :url, type: String, desc: 'URL of repository that contains pattern'
             requires :revision, type: String, desc: 'revision of repository'
           end
+          optional :os_version, type: String, desc: 'BaseImage os name and version'
         end
         post '/' do
           authorize!(:create, ::Blueprint)

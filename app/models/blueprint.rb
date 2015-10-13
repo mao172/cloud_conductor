@@ -19,6 +19,10 @@ class Blueprint < ActiveRecord::Base
 
   before_create :set_consul_secret_key
 
+  after_initialize do
+    self.os_version ||= 'CentOS-6.5'
+  end
+
   def set_consul_secret_key
     return unless CloudConductor::Config.consul.options.acl
     self.consul_secret_key ||= generate_consul_secret_key
