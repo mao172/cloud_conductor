@@ -5,6 +5,8 @@ class BaseImage < ActiveRecord::Base
   validates_associated :cloud
   validates_presence_of :cloud, :os, :source_image, :ssh_username
 
+  validates :os, uniqueness: { scope: :cloud_id }
+
   after_initialize do
     self.ssh_username ||= 'ec2-user'
     self.os ||= 'CentOS-6.5'

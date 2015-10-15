@@ -66,7 +66,7 @@ describe API do
     describe 'POST /base_images' do
       let(:method) { 'post' }
       let(:url) { '/api/v1/base_images' }
-      let(:params) { FactoryGirl.attributes_for(:base_image, cloud_id: cloud.id) }
+      let(:params) { FactoryGirl.attributes_for(:base_image, cloud_id: cloud.id, os: 'CentOS-7.0') }
       let(:result) do
         params.merge(
           'id' => Fixnum,
@@ -142,7 +142,7 @@ describe API do
     describe 'DELETE /base_images/:id' do
       let(:method) { 'delete' }
       let(:url) { "/api/v1/base_images/#{new_base_image.id}" }
-      let(:new_base_image) { FactoryGirl.create(:base_image, cloud_id: cloud.id) }
+      let(:new_base_image) { FactoryGirl.create(:base_image, cloud_id: cloud.id, os: 'CentOS-7.0') }
 
       context 'not_logged_in' do
         it_behaves_like('401 Unauthorized')

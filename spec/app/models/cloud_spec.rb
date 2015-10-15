@@ -137,7 +137,7 @@ describe Cloud do
     it 'delete all base image records' do
       cloud = FactoryGirl.create(:cloud, :openstack, project: project)
       FactoryGirl.create(:base_image, cloud: cloud)
-      FactoryGirl.create(:base_image, cloud: cloud)
+      FactoryGirl.create(:base_image, cloud: cloud, os: 'CentOS-7.0')
 
       expect(cloud.base_images.size).to eq(2)
       expect { cloud.destroy }.to change { BaseImage.count }.by(-2)
