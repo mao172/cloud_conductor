@@ -59,4 +59,6 @@ group :test do
   gem 'guard-rspec', require: false
   gem 'json_expressions', require: 'json_expressions/rspec'
   gem 'spring-commands-rspec'
+  gem 'autodoc', require: false
+  gem 'autodoc-grape', require: false
 end

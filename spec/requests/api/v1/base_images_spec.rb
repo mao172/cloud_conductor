@@ -21,6 +21,10 @@ describe API do
 
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
+
+        it 'Get base_image list', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -154,6 +158,10 @@ describe API do
 
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
+
+        it 'Get specified base_image information', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -188,6 +196,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('201 Created')
         it_behaves_like('create audit with project_id')
+
+        it 'Register base_image', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -258,6 +270,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
         it_behaves_like('create audit with project_id')
+
+        it 'Update base_image information', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -291,6 +307,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('204 No Content')
         it_behaves_like('create audit with project_id')
+
+        it 'Delete base_image', autodoc: true do
+          expect(subject.body).to be_empty
+        end
       end
 
       context 'project_owner', project_owner: true do

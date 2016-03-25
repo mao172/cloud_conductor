@@ -1,0 +1,21 @@
+<%# coding: UTF-8 -%>
+<% require 'webrick' %>
+----
+
+### [<%= method %>] /api/v1<%= path %>
+
+<%= description %>
+
+#<%= parameters_section %>
+
+#### Response
+
+Correct Response: <%= response.status %> <%= ::WEBrick::HTTPStatus.reason_phrase(response.status) %>
+
+```javascript
+<%= response_body_section %>
+```
+
+Error Response:
+
+- Authentication failed: 401 Unauthorized

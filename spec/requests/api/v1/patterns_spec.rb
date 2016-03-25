@@ -23,6 +23,10 @@ describe API do
 
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
+
+        it 'Get pattern list', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -79,6 +83,10 @@ describe API do
 
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
+
+        it 'Get specified pattern information', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -124,6 +132,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('201 Created')
         it_behaves_like('create audit with project_id')
+
+        it 'Register pattern', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -197,6 +209,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
         it_behaves_like('create audit with project_id')
+
+        it 'Update pattern information', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
@@ -230,6 +246,10 @@ describe API do
       context 'administrator', admin: true do
         it_behaves_like('204 No Content')
         it_behaves_like('create audit with project_id')
+
+        it 'Delete pattern', autodoc: true do
+          expect(subject.body).to be_empty
+        end
       end
 
       context 'project_owner', project_owner: true do

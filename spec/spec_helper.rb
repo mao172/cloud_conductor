@@ -7,9 +7,18 @@ require ::File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
 require 'pry'
 
+require 'autodoc'
+require 'autodoc/grape'
+
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 FactoryGirl.definition_file_paths = [::File.expand_path('../factories', __FILE__)]
 ActiveRecord::Migration.maintain_test_schema!
+
+Autodoc.configuration.toc = true
+Autodoc.configuration.document_path_from_example = -> (example) do
+  example.file_path.gsub(%r<\./spec/requests/api/v1/(.+)_spec\.rb>, '\1.md')
+end
+Autodoc.configuration.template = File.read(File.expand_path("../autodoc_template.md.erb", __FILE__))
 
 RSpec.configure do |config|
   config.use_transactional_fixtures = false

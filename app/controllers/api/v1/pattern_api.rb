@@ -48,6 +48,7 @@ module API
 
         desc 'Update pattern'
         params do
+          requires :id, type: Integer, desc: 'Pattern id'
           optional :url, type: String, desc: 'URL of repository that contains pattern'
           optional :revision, type: String, desc: 'revision of repository'
           optional :secret_key, type: String, desc: 'secret_key for private repository'

@@ -21,6 +21,10 @@ describe API do
 
       context 'administrator', admin: true do
         it_behaves_like('200 OK')
+
+        it 'Get audit list', autodoc: true do
+          expect(subject.body).to match_json_expression(result)
+        end
       end
 
       context 'project_owner', project_owner: true do
