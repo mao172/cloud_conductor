@@ -7,7 +7,7 @@ Get account list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
@@ -74,7 +74,7 @@ Get specified account information.
 
 #
 ### Parameters
-* id Integer (required) - Account id
+- *id: Account id
 
 
 #### Response
@@ -107,11 +107,11 @@ Create account.
 
 #
 ### Parameters
-* email String (required) - Account email
-* name String (required) - Account username
-* password String (required) - Account password
-* password_confirmation String (required) - Account password confirmation
-* admin Integer - Account role
+- *email: Account email
+- *name: Account username
+- *password: Account password
+- *password_confirmation: Account password confirmation
+- admin: Account role
 
 
 #### Response
@@ -144,12 +144,12 @@ Update account information.
 
 #
 ### Parameters
-* id Integer (required) - Account id
-* email String - Account email
-* name String - Account username
-* password String - Account old password
-* password_confirmation String - Account new password confirmation
-* admin Integer - Account role
+- *id: Account id
+- email: Account email
+- name: Account username
+- password: Account old password
+- password_confirmation: Account new password confirmation
+- admin: Account role
 
 
 #### Response
@@ -182,7 +182,7 @@ Delete account.
 
 #
 ### Parameters
-* id Integer (required) - Account id
+- *id: Account id
 
 
 #### Response

@@ -38,7 +38,7 @@ Get specified project information.
 
 #
 ### Parameters
-* id Integer (required) - Project id
+- *id: Project id
 
 
 #### Response
@@ -70,8 +70,8 @@ Create project.
 
 #
 ### Parameters
-* name String (required) - Project name
-* description String - Project description
+- *name: Project name
+- description: Project description
 
 
 #### Response
@@ -103,9 +103,9 @@ Update project information.
 
 #
 ### Parameters
-* id Integer (required) - Project id
-* name String - Project name
-* description String - Project description
+- *id: Project id
+- name: Project name
+- description: Project description
 
 
 #### Response
@@ -137,7 +137,7 @@ Delete project.
 
 #
 ### Parameters
-* id Integer (required) - Project id
+- *id: Project id
 
 
 #### Response

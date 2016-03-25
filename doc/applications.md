@@ -7,8 +7,8 @@ Get application list.
 
 #
 ### Parameters
-* system_id Integer - Target system id
-* project_id Integer - Target project id
+- system_id: Target system id
+- project_id: Target project id
 
 
 #### Response
@@ -44,7 +44,7 @@ Get specified application information.
 
 #
 ### Parameters
-* id Integer (required) - Application id
+- *id: Application id
 
 
 #### Response
@@ -78,10 +78,10 @@ Create application.
 
 #
 ### Parameters
-* system_id Integer (required) - Target system id
-* name String (required) - Application name
-* description String - Application description
-* domain String - Application domain name
+- *system_id: Target system id
+- *name: Application name
+- description: Application description
+- domain: Application domain name
 
 
 #### Response
@@ -115,10 +115,10 @@ Update application information.
 
 #
 ### Parameters
-* id Integer (required) - Application id
-* name String - Application name
-* description String - Application description
-* domain String - Application domain name
+- *id: Application id
+- name: Application name
+- description: Application description
+- domain: Application domain name
 
 
 #### Response
@@ -152,7 +152,7 @@ Delete application.
 
 #
 ### Parameters
-* id Integer (required) - Application id
+- *id: Application id
 
 
 #### Response
@@ -176,9 +176,9 @@ Deploy application to environment.
 
 #
 ### Parameters
-* id Integer (required) - Application id
-* environment_id Integer (required) - Target environment id
-* application_history_id Integer - Application history id
+- *id: Application id
+- *environment_id: Target environment id
+- application_history_id: Application history id
 
 
 #### Response

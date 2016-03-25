@@ -7,7 +7,7 @@ Get pattern list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
@@ -48,7 +48,7 @@ Get specified pattern information.
 
 #
 ### Parameters
-* id Integer (required) - Pattern id
+- *id: Pattern id
 
 
 #### Response
@@ -87,10 +87,10 @@ Register pattern.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* url String (required) - URL of repository that contains pattern
-* revision String - revision of repository
-* secret_key String - secret_key for private repository
+- *project_id: Project id
+- *url: URL of repository that contains pattern
+- revision: revision of repository
+- secret_key: secret_key for private repository
 
 
 #### Response
@@ -129,10 +129,10 @@ Update pattern information.
 
 #
 ### Parameters
-* id Integer (required) - Pattern id
-* url String - URL of repository that contains pattern
-* revision String - revision of repository
-* secret_key String - secret_key for private repository
+- *id: Pattern id
+- url: URL of repository that contains pattern
+- revision: revision of repository
+- secret_key: secret_key for private repository
 
 
 #### Response
@@ -171,7 +171,7 @@ Delete pattern.
 
 #
 ### Parameters
-* id Integer (required) - Pattern id
+- *id: Pattern id
 
 
 #### Response

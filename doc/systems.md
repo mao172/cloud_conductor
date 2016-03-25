@@ -7,7 +7,7 @@ Get system list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
@@ -44,7 +44,7 @@ Get specified system information.
 
 #
 ### Parameters
-* id Integer (required) - System id
+- *id: System id
 
 
 #### Response
@@ -79,10 +79,10 @@ Create system.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* name String (required) - System name
-* description String - System description
-* domain String - System domain name
+- *project_id: Project id
+- *name: System name
+- description: System description
+- domain: System domain name
 
 
 #### Response
@@ -117,10 +117,10 @@ Update system information.
 
 #
 ### Parameters
-* id Integer (required) - System id
-* name String - System name
-* description String - System description
-* domain String - System domain name
+- *id: System id
+- name: System name
+- description: System description
+- domain: System domain name
 
 
 #### Response
@@ -155,7 +155,7 @@ Delete system.
 
 #
 ### Parameters
-* id Integer (required) - System id
+- *id: System id
 
 
 #### Response

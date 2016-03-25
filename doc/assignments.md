@@ -7,8 +7,8 @@ Get assignment list.
 
 #
 ### Parameters
-* project_id Integer - Project id
-* account_id Integer - Account id
+- project_id: Project id
+- account_id: Account id
 
 
 #### Response
@@ -49,7 +49,7 @@ Get specified assignment information.
 
 #
 ### Parameters
-* id Integer (required) - Assignment id
+- *id: Assignment id
 
 
 #### Response
@@ -81,8 +81,8 @@ Create assignment.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* account_id Integer (required) - Account id
+- *project_id: Project id
+- *account_id: Account id
 
 
 #### Response
@@ -114,7 +114,7 @@ Delete assignment.
 
 #
 ### Parameters
-* id Integer (required) - Assignment id
+- *id: Assignment id
 
 
 #### Response

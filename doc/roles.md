@@ -7,8 +7,8 @@ Get role list.
 
 #
 ### Parameters
-* project_id Integer - Project id
-* account_id Integer - Account id
+- project_id: Project id
+- account_id: Account id
 
 
 #### Response
@@ -80,7 +80,7 @@ Get specified role information.
 
 #
 ### Parameters
-* id Integer (required) - Role id
+- *id: Role id
 
 
 #### Response
@@ -114,9 +114,9 @@ Create role.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* name String (required) - Role name
-* description String - Role description
+- *project_id: Project id
+- *name: Role name
+- description: Role description
 
 
 #### Response
@@ -150,9 +150,9 @@ Update role information.
 
 #
 ### Parameters
-* id Integer (required) - Role id
-* name String - Role name
-* description String - Role description
+- *id: Role id
+- name: Role name
+- description: Role description
 
 
 #### Response
@@ -186,7 +186,7 @@ Delete role.
 
 #
 ### Parameters
-* id Integer (required) - Role id
+- *id: Role id
 
 
 #### Response

@@ -7,7 +7,7 @@ Get blueprint list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
@@ -42,7 +42,7 @@ Get specified blueprint information.
 
 #
 ### Parameters
-* id Integer (required) - Blueprint id
+- *id: Blueprint id
 
 
 #### Response
@@ -75,9 +75,9 @@ Create blueprint.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* name String (required) - Blueprint name
-* description String - Blueprint description
+- *project_id: Project id
+- *name: Blueprint name
+- description: Blueprint description
 
 
 #### Response
@@ -110,9 +110,9 @@ Update blueprint information.
 
 #
 ### Parameters
-* id Integer (required) - Blueprint id
-* name String - Blueprint name
-* description String - Blueprint description
+- *id: Blueprint id
+- name: Blueprint name
+- description: Blueprint description
 
 
 #### Response
@@ -145,7 +145,7 @@ Delete base_image.
 
 #
 ### Parameters
-* id Integer (required) - Blueprint id
+- *id: Blueprint id
 
 
 #### Response
@@ -169,7 +169,7 @@ Build blueprint history with images from blueprint.
 
 #
 ### Parameters
-* blueprint_id Integer (required) - Blueprint id
+- *blueprint_id: Blueprint id
 
 
 #### Response

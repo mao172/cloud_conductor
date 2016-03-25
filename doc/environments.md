@@ -7,8 +7,8 @@ Get environment list.
 
 #
 ### Parameters
-* system_id Integer - System id
-* project_id Integer - Project id
+- system_id: System id
+- project_id: Project id
 
 
 #### Response
@@ -49,7 +49,7 @@ Get specified environment information.
 
 #
 ### Parameters
-* id Integer (required) - Environment id
+- *id: Environment id
 
 
 #### Response
@@ -88,14 +88,14 @@ Create environment.
 
 #
 ### Parameters
-* system_id Integer (required) - System id
-* blueprint_id Integer (required) - Blueprint id
-* version Integer (required) - Blueprint version
-* name String (required) - Environment name
-* description String - Environment description
-* template_parameters String - Variables to build environment by cfn/terraform
-* user_attributes String - User Attribute JSON
-* candidates_attributes Array (required) - Cloud ids to build environment
+- *system_id: System id
+- *blueprint_id: Blueprint id
+- *version: Blueprint version
+- *name: Environment name
+- description: Environment description
+- template_parameters: Variables to build environment by cfn/terraform
+- user_attributes: User Attribute JSON
+- *candidates_attributes: Cloud ids to build environment
  * cloud_id String (required) - Cloud id
  * priority Integer - Cloud priority(prefer cloud that has higher value)
 
@@ -136,11 +136,11 @@ Update environment information.
 
 #
 ### Parameters
-* id Integer (required) - Environment id
-* name String - Environment name
-* description String - Environment description
-* user_attributes String - User Attributes JSON
-* template_parameters String - Variables to build environment by cfn/terraform
+- *id: Environment id
+- name: Environment name
+- description: Environment description
+- user_attributes: User Attributes JSON
+- template_parameters: Variables to build environment by cfn/terraform
 
 
 #### Response
@@ -179,7 +179,7 @@ Delete environment.
 
 #
 ### Parameters
-* id Integer (required) - Environment id
+- *id: Environment id
 
 
 #### Response
@@ -203,14 +203,14 @@ Rebuild environment.
 
 #
 ### Parameters
-* id Integer (required) - Environment id
-* name String - Blueprint name
-* blueprint_id Integer - Blueprint id
-* version Integer - Blueprint version
-* description String - Environment description
-* switch Virtus::Attribute::Boolean - Switch primary environment automatically
-* template_parameters String - Variables to build environment by cfn/terraform
-* user_attributes String - User Attributes JSON
+- *id: Environment id
+- name: Blueprint name
+- blueprint_id: Blueprint id
+- version: Blueprint version
+- description: Environment description
+- switch: Switch primary environment automatically
+- template_parameters: Variables to build environment by cfn/terraform
+- user_attributes: User Attributes JSON
 
 
 #### Response

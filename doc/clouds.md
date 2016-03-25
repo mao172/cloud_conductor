@@ -7,7 +7,7 @@ Get cloud list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
@@ -47,7 +47,7 @@ Get specified cloud information.
 
 #
 ### Parameters
-* id Integer (required) - Cloud id
+- *id: Cloud id
 
 
 #### Response
@@ -85,14 +85,14 @@ Register cloud.
 
 #
 ### Parameters
-* project_id Integer (required) - Project id
-* name String (required) - Cloud name
-* type String (required) - Cloud type (aws or openstack)
-* key String (required) - AccessKey or username to authenticate cloud
-* secret String - SecretKey or password to authenticate cloud
-* entry_point String (required) - Entry point (e.g. ap-northeast-1 or http://<your-openstack>:5000/)
-* description String - Cloud description
-* tenant_name String - Tenant name (OpenStack only)
+- *project_id: Project id
+- *name: Cloud name
+- *type: Cloud type (aws or openstack)
+- *key: AccessKey or username to authenticate cloud
+- secret: SecretKey or password to authenticate cloud
+- *entry_point: Entry point (e.g. ap-northeast-1 or http://<your-openstack>:5000/)
+- description: Cloud description
+- tenant_name: Tenant name (OpenStack only)
 
 
 #### Response
@@ -130,14 +130,14 @@ Update cloud information.
 
 #
 ### Parameters
-* id Integer (required) - Cloud id
-* name String - Cloud name
-* type String - Cloud type (aws or openstack)
-* key String - AccessKey or username to authenticate cloud
-* secret String - SecretKey or password to authenticate cloud
-* entry_point String - Entry point (e.g. ap-northeast-1 or http://<your-openstack>:5000/)
-* description String - Cloud description
-* tenant_name String - Tenant name (OpenStack only)
+- *id: Cloud id
+- name: Cloud name
+- type: Cloud type (aws or openstack)
+- key: AccessKey or username to authenticate cloud
+- secret: SecretKey or password to authenticate cloud
+- entry_point: Entry point (e.g. ap-northeast-1 or http://<your-openstack>:5000/)
+- description: Cloud description
+- tenant_name: Tenant name (OpenStack only)
 
 
 #### Response
@@ -175,7 +175,7 @@ Delete cloud.
 
 #
 ### Parameters
-* id Integer (required) - Cloud id
+- *id: Cloud id
 
 
 #### Response

@@ -7,8 +7,8 @@ Get base_image list.
 
 #
 ### Parameters
-* cloud_id Integer - Cloud id
-* project_id Integer - Project id
+- cloud_id: Cloud id
+- project_id: Project id
 
 
 #### Response
@@ -55,7 +55,7 @@ Get specified base_image information.
 
 #
 ### Parameters
-* id Integer (required) - BaseImage id
+- *id: BaseImage id
 
 
 #### Response
@@ -90,11 +90,11 @@ Register base_image.
 
 #
 ### Parameters
-* cloud_id Integer (required) - Cloud id
-* ssh_username String (required) - SSH login username to created instance
-* source_image String (required) - AMI id on AWS or image UUID on openstack
-* platform String (required) - Operating system name
-* platform_version String - Operating system version
+- *cloud_id: Cloud id
+- *ssh_username: SSH login username to created instance
+- *source_image: AMI id on AWS or image UUID on openstack
+- *platform: Operating system name
+- platform_version: Operating system version
 
 
 #### Response
@@ -129,11 +129,11 @@ Update base_image information.
 
 #
 ### Parameters
-* id Integer (required) - BaseImage id
-* ssh_username String - SSH login username to created instance
-* source_image String - AMI id on AWS or image UUID on openstack
-* platform String - Operating system name
-* platform_version String - Operating system version
+- *id: BaseImage id
+- ssh_username: SSH login username to created instance
+- source_image: AMI id on AWS or image UUID on openstack
+- platform: Operating system name
+- platform_version: Operating system version
 
 
 #### Response
@@ -168,7 +168,7 @@ Delete base_image.
 
 #
 ### Parameters
-* id Integer (required) - BaseImage id
+- *id: BaseImage id
 
 
 #### Response

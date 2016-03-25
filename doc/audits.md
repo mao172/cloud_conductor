@@ -7,7 +7,7 @@ Get audit list.
 
 #
 ### Parameters
-* project_id Integer - Project id
+- project_id: Project id
 
 
 #### Response
